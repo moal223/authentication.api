@@ -34,6 +34,14 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 //            .AddEntityFrameworkStores<ApplicationDbContext>()
 //            .AddDefaultTokenProviders();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+}
+);
 
 builder.Services.AddAuthentication(options =>
 {
@@ -67,6 +75,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowAll");
 
 app.UseAuthentication();
 app.UseAuthorization();

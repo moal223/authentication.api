@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vkulx/maGqHnqdlKB4jdfOOkC/QoWB3rmDma78rVicUEOE9ToXIb8Ws0Amo1CUJ/VkQEYY432NM9KNb6oqhQcw==",
+  "dgSpecHash": "rVfIFBaPBdHUiZWvOWQ+dmppxqYJ35IPY7GxnvclmnVxubbG0+6eRG8d9wVicyHBQRTHldnqxdXlz1y0eg5ZBw==",
   "success": true,
-  "projectFilePath": "C:\\gp-project\\gp-backendv2\\gp-backend.Api\\gp-backend.Core\\gp-backend.Core.csproj",
+  "projectFilePath": "C:\\gp-project\\gp-backendv2\\authentication.api\\gp-backend.Core\\gp-backend.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\XPRISTO\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.7\\microsoft.aspnetcore.cryptography.internal.8.0.7.nupkg.sha512",
     "C:\\Users\\XPRISTO\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.7\\microsoft.aspnetcore.cryptography.keyderivation.8.0.7.nupkg.sha512",

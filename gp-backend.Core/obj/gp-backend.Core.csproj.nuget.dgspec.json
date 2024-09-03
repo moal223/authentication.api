@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\gp-project\\gp-backendv2\\gp-backend.Api\\gp-backend.Core\\gp-backend.Core.csproj": {}
+    "C:\\gp-project\\gp-backendv2\\authentication.api\\gp-backend.Core\\gp-backend.Core.csproj": {}
   },
   "projects": {
-    "C:\\gp-project\\gp-backendv2\\gp-backend.Api\\gp-backend.Core\\gp-backend.Core.csproj": {
+    "C:\\gp-project\\gp-backendv2\\authentication.api\\gp-backend.Core\\gp-backend.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\gp-project\\gp-backendv2\\gp-backend.Api\\gp-backend.Core\\gp-backend.Core.csproj",
+        "projectUniqueName": "C:\\gp-project\\gp-backendv2\\authentication.api\\gp-backend.Core\\gp-backend.Core.csproj",
         "projectName": "gp-backend.Core",
-        "projectPath": "C:\\gp-project\\gp-backendv2\\gp-backend.Api\\gp-backend.Core\\gp-backend.Core.csproj",
+        "projectPath": "C:\\gp-project\\gp-backendv2\\authentication.api\\gp-backend.Core\\gp-backend.Core.csproj",
         "packagesPath": "C:\\Users\\XPRISTO\\.nuget\\packages\\",
-        "outputPath": "C:\\gp-project\\gp-backendv2\\gp-backend.Api\\gp-backend.Core\\obj\\",
+        "outputPath": "C:\\gp-project\\gp-backendv2\\authentication.api\\gp-backend.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
