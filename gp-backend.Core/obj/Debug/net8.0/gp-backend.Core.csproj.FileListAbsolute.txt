@@ -1,0 +1,51 @@
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.deps.json
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.dll
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.pdb
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.csproj.AssemblyReference.cache
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.AssemblyInfoInputs.cache
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.AssemblyInfo.cs
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.csproj.CoreCompileInputs.cache
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.dll
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\refint\gp-backend.Core.dll
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.pdb
+E:\GP_Tasks\GP-Backend\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\ref\gp-backend.Core.dll
+C:\gp-project\gp-backend.Api\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.deps.json
+C:\gp-project\gp-backend.Api\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.dll
+C:\gp-project\gp-backend.Api\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.pdb
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.csproj.AssemblyReference.cache
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.AssemblyInfoInputs.cache
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.AssemblyInfo.cs
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.csproj.CoreCompileInputs.cache
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.sourcelink.json
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.dll
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\refint\gp-backend.Core.dll
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.pdb
+C:\gp-project\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\ref\gp-backend.Core.dll
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.deps.json
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.dll
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.pdb
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.csproj.AssemblyReference.cache
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.AssemblyInfoInputs.cache
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.AssemblyInfo.cs
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.csproj.CoreCompileInputs.cache
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.sourcelink.json
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.dll
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\refint\gp-backend.Core.dll
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.pdb
+C:\gp-project\gp-backend.Api - mysql\gp-backend.Core\obj\Debug\net8.0\ref\gp-backend.Core.dll
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.deps.json
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.dll
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\bin\Debug\net8.0\gp-backend.Core.pdb
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.csproj.AssemblyReference.cache
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.AssemblyInfoInputs.cache
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.AssemblyInfo.cs
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.csproj.CoreCompileInputs.cache
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.sourcelink.json
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.dll
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\refint\gp-backend.Core.dll
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\gp-backend.Core.pdb
+C:\gp-project\gp-backendv2\gp-backend.Api\gp-backend.Core\obj\Debug\net8.0\ref\gp-backend.Core.dll

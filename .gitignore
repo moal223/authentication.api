@@ -1,0 +1,7 @@
+.vs/
+gp-backend.Api/bin
+gp-backend.Api/obj
+AuthenticationServer.Api/bin
+AuthenticationServer.Api/obj
+gp-backend.EF/bin
+gp-backend.EF/obj
