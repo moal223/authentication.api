@@ -82,16 +82,10 @@ namespace AuthenticationServer.Api.Controllers
                     return BadRequest(new BaseResponse(false, new List<string> { "This email already exists." }, null));
 
                 // create the user
-                var user = new ApplicationUser { Email = model.Email, UserName = model.Email.Split('@')[0] };
+                var user = new ApplicationUser { Email = model.Email, UserName = model.FullName };
                 var result = await _userManager.CreateAsync(user, model.Password);
 
                 // return the token
-                if (result.Succeeded)
-                {
-                    await _userManager.AddToRoleAsync(user, "Admin");
-                    var tokens = await _tokenService.GenerateTokensAsync(user);
-                    return Ok(new BaseResponse(true, new List<string> { "Success" }, new { access = tokens.accessToken, refresh = tokens.refreshToken }));
-                }
 
                 return BadRequest(new BaseResponse(false, result.Errors.Select(e => e.Description).ToList(), null));
             }
