@@ -86,6 +86,11 @@ namespace AuthenticationServer.Api.Controllers
                 var result = await _userManager.CreateAsync(user, model.Password);
 
                 // return the token
+                if (result.Succeeded)
+                {
+                    var tokens = await _tokenService.GenerateTokensAsync(user);
+                    return Ok(new BaseResponse(true, new List<string> { "Success" }, new { access = tokens.accessToken, refresh = tokens.refreshToken }));
+                }
 
                 return BadRequest(new BaseResponse(false, result.Errors.Select(e => e.Description).ToList(), null));
             }
