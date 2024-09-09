@@ -52,7 +52,8 @@ namespace AuthenticationServer.Api.Services
                 new ("uid", user.Id.ToString()),
                 new (JwtRegisteredClaimNames.Sub, user.UserName),
                 new (JwtRegisteredClaimNames.Email, user.Email),
-                new (JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                new (JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new ("exp", DateTime.Now.AddMinutes(_jwtSettings.DurationMin).ToString())
             };
             // user roles
             var roles = await _userManager.GetRolesAsync(user);
