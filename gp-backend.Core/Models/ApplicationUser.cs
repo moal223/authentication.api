@@ -4,6 +4,7 @@ namespace gp_backend.Core.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        public string? FullName { get; set; }
         public List<RefreshToken>? RefreshTokens { get; set; } = [];
         public List<Wound>? Wounds { get; set; } = [];
         public List<FeedBack>? FeedBacks { get; set; } = [];
