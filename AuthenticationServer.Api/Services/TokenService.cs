@@ -49,7 +49,7 @@ namespace AuthenticationServer.Api.Services
             // user main info
             var claims = new List<Claim>
             {
-                new ("uid", user.Id.ToString()),
+                new ("uid", user.Id.ToString()), 
                 new (JwtRegisteredClaimNames.Sub, user.FullName == null ? "" : user.FullName),
                 new (JwtRegisteredClaimNames.Email, user.Email),
                 new (JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),

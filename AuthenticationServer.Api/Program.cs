@@ -27,7 +27,14 @@ builder.Services.AddDbContext<MySqlDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("mysql-db"), new MySqlServerVersion(new Version(8, 0, 23)))
 );
 
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+    options.Password.RequireDigit = true;        
+    options.Password.RequireLowercase = true;    
+    options.Password.RequireUppercase = false;   
+    options.Password.RequireNonAlphanumeric = false; 
+    options.Password.RequiredLength = 6;         
+})
             .AddEntityFrameworkStores<MySqlDbContext>()
             .AddDefaultTokenProviders();
 //builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
