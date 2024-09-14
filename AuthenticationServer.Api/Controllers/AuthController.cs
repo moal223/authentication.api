@@ -82,7 +82,7 @@ namespace AuthenticationServer.Api.Controllers
                     return BadRequest(new BaseResponse(false, new List<string> { "This email already exists." }, null));
 
                 // create the user
-                var user = new ApplicationUser { Email = model.Email, UserName = model.FullName };
+                var user = new ApplicationUser { Email = model.Email, UserName = Guid.NewGuid().ToString(), FullName = model.FullName };
                 var result = await _userManager.CreateAsync(user, model.Password);
 
                 // return the token
