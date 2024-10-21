@@ -24,7 +24,7 @@ builder.Services.AddSwaggerGen();
 //    options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 builder.Services.AddDbContext<MySqlDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("mysql-db"), new MySqlServerVersion(new Version(8, 0, 23)))
+    options.UseMySql(builder.Configuration.GetConnectionString("mysql-pub"), new MySqlServerVersion(new Version(8, 0, 23)))
 );
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
