@@ -47,7 +47,7 @@ namespace AuthenticationServer.Api.Controllers
                 var count = await _userManager.Users
                     .Where(u => u.Email == model.Email)
                     .CountAsync();
-                if(count > 0)
+                if(count > 1)
                     return Unauthorized(new BaseResponse(false, new List<string> { "the password is not correct." }, null));
 
                 var user = await _userManager.FindByEmailAsync(model.Email);
