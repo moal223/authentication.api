@@ -1,8 +1,10 @@
 ﻿using AuthenticationServer.Api.Dtos;
 using AuthenticationServer.Api.Dtos.Authentication;
 using AuthenticationServer.Api.Dtos.Tokens;
+using AuthenticationServer.Api.Dtos.User;
 using AuthenticationServer.Api.Services.Interfaces;
 using gp_backend.Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -42,6 +44,12 @@ namespace AuthenticationServer.Api.Controllers
                 }
 
                 // check if the user registerd
+                var count = await _userManager.Users
+                    .Where(u => u.Email == model.Email)
+                    .CountAsync();
+                if(count > 0)
+                    return Unauthorized(new BaseResponse(false, new List<string> { "the password is not correct." }, null));
+
                 var user = await _userManager.FindByEmailAsync(model.Email);
                 if (user is not null)
                 {
@@ -120,6 +128,20 @@ namespace AuthenticationServer.Api.Controllers
                 _logger.LogError(ex, "an error occurred while logging a user.");
                 return StatusCode(500, new BaseResponse(false, new List<string> { "An error occurred while generating refresh token your request" }, null));
             }
+        }
+
+        [HttpGet("all")]
+        public async Task<ActionResult<IEnumerable<GetAllUsersDto>>> GetAllUsers()
+        {
+            var users = _userManager.Users
+                .Select(u => new GetAllUsersDto
+                {
+                    Id = u.Id,
+                    UserName = u.FullName
+                })
+                .ToList();
+
+            return Ok(users);
         }
     }
 }
