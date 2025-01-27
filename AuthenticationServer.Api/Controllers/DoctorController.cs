@@ -2,6 +2,7 @@
 using AuthenticationServer.Api.Dtos.Doctor;
 using AuthenticationServer.Api.Services.Interfaces;
 using gp_backend.Core.Models;
+using gp_backend.EF.MSSql.Repositories.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -17,14 +18,17 @@ namespace AuthenticationServer.Api.Controllers
         private readonly RoleManager<IdentityRole> _RoleManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ITokenService _tokenService;
+        private readonly ISpecialRepo _specialRepo;
         public DoctorController(ITokenService tokenService, UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager, ILogger<AuthController> logger, RoleManager<IdentityRole> roleManager)
+            SignInManager<ApplicationUser> signInManager, ILogger<AuthController> logger, RoleManager<IdentityRole> roleManager,
+            ISpecialRepo specialRepo)
         {
             _tokenService = tokenService;
             _signInManager = signInManager;
             _userManager = userManager;
             _logger = logger;
             _RoleManager = roleManager;
+            _specialRepo = specialRepo;
         }
 
         [HttpPost("doc-register")]
@@ -39,13 +43,25 @@ namespace AuthenticationServer.Api.Controllers
                         .Select(e => e.ErrorMessage).ToList(), null));
                 }
 
+                /*
+                    check if the Specialization exists and if it dosen't of the taple is empty return this Specialization doesn't exist
+                 */
+                var specials = (await _specialRepo.GetAllAsync("")).Where(x => x.Id == model.SpecialId).ToList();
+
+                if(specials.Count <= 0)
+                    return BadRequest(new BaseResponse(false, new List<string> { "this Specialization doesn't exist!" }, null));
+
                 // check if the email is unique
                 var email = await _userManager.FindByEmailAsync(model.Email);
                 if (email != null)
                     return BadRequest(new BaseResponse(false, new List<string> { "This email already exists." }, null));
 
                 // create the user
-                var user = new ApplicationUser { Email = model.Email, FullName = model.FullName, PhoneNumber = model.PhoneNumber, UserName = Guid.NewGuid().ToString() };
+                var user = new ApplicationUser { Email = model.Email,
+                    FullName = model.FullName,
+                    PhoneNumber = model.PhoneNumber,
+                    Specializations = specials,
+                    UserName = Guid.NewGuid().ToString() };
                 var result = await _userManager.CreateAsync(user, model.Password);
 
                 // return the token

@@ -10,6 +10,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 //using gp_backend.EF.MSSql.Data;
 using gp_backend.EF.MySql.Data;
+using gp_backend.EF.MySql.Repositories.Interfaces;
+using gp_backend.EF.MySql.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -75,6 +77,7 @@ builder.Services.AddAuthorization();
 builder.Services.Configure<Jwt>(builder.Configuration.GetSection("Jwt"));
 
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<ISpecialRepo, SpecialRepo>();
 
 var app = builder.Build();
 
