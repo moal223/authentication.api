@@ -2,7 +2,7 @@
 using AuthenticationServer.Api.Dtos.Doctor;
 using AuthenticationServer.Api.Services.Interfaces;
 using gp_backend.Core.Models;
-using gp_backend.EF.MSSql.Repositories.Interfaces;
+using gp_backend.EF.MySql.Repositories.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
