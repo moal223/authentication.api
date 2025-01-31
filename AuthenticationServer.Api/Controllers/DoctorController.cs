@@ -48,7 +48,7 @@ namespace AuthenticationServer.Api.Controllers
                  */
                 var specials = (await _specialRepo.GetAllAsync("")).Where(x => x.Id == model.SpecialId).ToList();
 
-                if(specials.Count <= 0)
+                if (specials.Count <= 0)
                     return BadRequest(new BaseResponse(false, new List<string> { "this Specialization doesn't exist!" }, null));
 
                 // check if the email is unique
@@ -60,7 +60,7 @@ namespace AuthenticationServer.Api.Controllers
                 var user = new ApplicationUser { Email = model.Email,
                     FullName = model.FullName,
                     PhoneNumber = model.PhoneNumber,
-                    Specializations = specials,
+                    //Specializations = specials,
                     UserName = Guid.NewGuid().ToString() };
                 var result = await _userManager.CreateAsync(user, model.Password);
 
