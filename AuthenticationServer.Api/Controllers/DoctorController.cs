@@ -46,7 +46,7 @@ namespace AuthenticationServer.Api.Controllers
                 /*
                     check if the Specialization exists and if it dosen't of the taple is empty return this Specialization doesn't exist
                  */
-                var specials = (await _specialRepo.GetAllAsync("")).Where(x => x.Id == model.SpecialId).ToList();
+                //var specials = (await _specialRepo.GetAllAsync("")).Where(x => x.Id == model.SpecialId).ToList();
 
                 //if (specials.Count <= 0)
                 //    return BadRequest(new BaseResponse(false, new List<string> { "this Specialization doesn't exist!" }, null));
